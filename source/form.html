@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo" href="index.html" aria-label="Перейти на главную странице">
+      <img class="header__logo-image" src="https://via.placeholder.com/102x84" alt="Логотип Седоны" height="84"
+        width="102">
+    </a>
+    <nav class="header__site-navigation site-navigation">
+      <button class="site-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="site-navigation__list">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Фото и видео</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="feedback">
+    <h1 class="feedback__title">Оставьте свой отзыв</h1>
+    <p class="feedback__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях</p>
+    <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="GET">
+      <fieldset class="form__fieldset">
+        <legend class="form__caption">Представьтесь:</legend>
+        <label class="form__label" for="name">Имя*:</label>
+        <input class="form__input" type="text" name="name" id="name" placeholder="Петр" required>
+        <label class="form__label" for="surname">Фамилия*:</label>
+        <input class="form__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+        <label class="form__label" for="patronymic">Отчество:</label>
+        <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__caption">Контактная информация:</legend>
+        <label for="telephone">Контактный телефон*:</label>
+        <input class="form__input form__input--telephone" type="tel" name="telephone" id="telephone" required>
+        <label for="email">Электронная почта*:</label>
+        <input class="form__input form__input--email" type="email" name="email" id="email" required>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <input class="form__radio" type="radio" name="impression" id="positive" value="positive" checked>
+        <label class="form__radio-label" for="positive">Скорее положительное</label>
+        <input class="form__radio" type="radio" name="impression" id="negative" value="negative">
+        <label class="form__radio-label" for="negative">Скорее отрицательное</label>
+        <input class="form__radio" type="radio" name="impression" id="no-answer" value="no-answer">
+        <label class="form__radio-label" for="no-answer">Затрудняюсь ответить</label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <input class="form__checkbox" type="checkbox" name="attractions" id="devils-bridge" value="devils-bridge"
+          checked>
+        <label class="form__checkbox-label" for="devils-bridge">Мост Дьявола</label>
+        <input class="form__checkbox" type="checkbox" name="attractions" id="mountain-bell" value="mountain-bell"
+          checked>
+        <label for="mountain-bell">Гора-Колокол</label>
+        <input class="form__checkbox" type="checkbox" name="attractions" id="slide-park" value="slide-park" checked>
+        <label class="form__checkbox-label" for="slide-park">Слайд-парк</label>
+        <input class="form__checkbox" type="checkbox" name="attractions" id="red-rocks" value="red-rocks">
+        <label class="form__checkbox-label" for="red-rocks">Красные скалы</label>
+      </fieldset>
+      <label class="form__caption" for="message">Опишите свои эмоции:</label>
+      <textarea class="form__message" name="message" id="message"
+        placeholder="Опишите подробно все свои восторги"></textarea>
+      <button class="form__button button" type="submit">Отправить отзыв</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__hashtag">#visitsedona</p>
+    <section class="footer__socials socials">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link socials__link--twitter" href="#" aria-label="Twitter"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="#" aria-label="Facebook"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="#" aria-label="ВКонтакте"></a>
+        </li>
+      </ul>
+    </section>
+    <div class="footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo-image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27"
+          height="34">
+      </a>
+    </div>
+  </footer>
+  <section class="modal modal--error">
+    <h2 class="modal__title">Что-то пошло не так!</h2>
+    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button button">OK</button>
+  </section>
+  <section class="modal modal--success">
+    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+    <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на
+      сайте.</p>
+    <button class="modal__button button">Закрыть окно</button>
+  </section>
+</body>
+
+</html>
