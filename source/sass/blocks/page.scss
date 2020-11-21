@@ -1,0 +1,8 @@
+.page__body {
+  @include reset;
+  font-family: $font-family;
+  text-transform: uppercase;
+  color: $dark-text;
+  font-size: 14px;
+  line-height: 21px;
+}

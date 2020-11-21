@@ -1,0 +1,38 @@
+.site-navigation {
+}
+
+.site-navigation__toggle {
+}
+
+.site-navigation__list {
+  @include reset-list;
+  color: $light-text;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  background-color: $basic-blue;
+}
+.site-navigation__item {
+  text-align: center;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  &:first-child {
+    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  }
+  &:last-child {
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.site-navigation__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  @include reset-link;
+  &:hover {
+    background-color: $button-background-hover;
+  }
+  &:active {
+    color: rgba($light-text, 0.3);
+    background-color: $button-background-active;
+  }
+}
