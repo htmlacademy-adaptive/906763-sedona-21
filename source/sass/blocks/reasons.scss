@@ -1,0 +1,59 @@
+.reasons {
+}
+
+.reasons__intro {
+  margin-top: 0;
+  margin-bottom: 27px;
+  line-height: 26px;
+  text-align: center;
+}
+.reasons__list {
+  @include reset-list;
+}
+.reasons__item {
+  padding-top: 25px;
+  padding-bottom: 24px;
+  color: $dark-text;
+  text-align: center;
+  background-color: $basic-grey;
+  &--expanded {
+    color: $light-text;
+    background-color: $basic-blue;
+    padding-bottom: 0;
+  }
+  &--advantages {
+    @include reset;
+  }
+  &--true-town {
+    padding-top: 55px;
+  }
+  &--devils-bridge {
+    padding-top: 39px;
+  }
+}
+
+.reasons__text-wrapper {
+  padding-bottom: 35px;
+}
+
+.reasons__title {
+  @include reset;
+  margin-bottom: 11px;
+}
+
+.reasons__title-text {
+  margin-bottom: 17px;
+  color: $dark-title;
+}
+
+.reasons__number {
+  @include reset;
+  margin-bottom: 15px;
+}
+.reasons__text {
+  @include reset;
+}
+.reasons__image {
+  display: block;
+}
+

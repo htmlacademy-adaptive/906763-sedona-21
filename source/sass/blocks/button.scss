@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  color: $light-text;
+  font-weight: bold;
+  font-size: 21px;
+  text-decoration: none;
+  background-color: $basic-blue;
+  &:hover {
+    background-color: $button-background-hover;
+  }
+  &:active {
+    color: rgba($light-text, 0.3);
+    background-color: $button-background-active;
+  }
+}

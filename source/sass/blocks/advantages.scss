@@ -1,0 +1,32 @@
+
+.advantages {
+  padding-top: 25px;
+  background-color: white;
+}
+.advantages__list {
+  @include reset-list;
+
+}
+.advantages__item {
+  padding-left: 70px;
+  padding-top: 9px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  text-align: left;
+
+}
+.advantages__title {
+  @include reset;
+  margin-bottom: 17px;
+}
+
+.advantages__text {
+  @include reset;
+}
+
+.advantages__title--house {
+}
+.advantages__title--souvenirs {
+}
+.advantages__title--food {
+}
