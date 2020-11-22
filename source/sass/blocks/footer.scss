@@ -1,0 +1,17 @@
+.footer {
+  padding-bottom: 22px;
+  padding-top: 38px;
+}
+.footer__hashtag {
+  @include reset;
+  margin-bottom: 33px;
+  color: $dark-title;
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+.footer__socials {
+  margin-bottom: 40px;
+}
+.footer__copyright {
+}

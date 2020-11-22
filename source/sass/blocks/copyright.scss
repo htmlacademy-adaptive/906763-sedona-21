@@ -1,0 +1,14 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+.copyright__text {
+  @include reset;
+  margin-right: 12px;
+  color: black;
+  align-self: center;
+}
+.copyright__logo {
+}
+.copyright__logo-image {
+}

@@ -1,0 +1,21 @@
+.search-hotel {
+  padding-top: 33px;
+  padding-bottom: 49px;
+  text-align: center;
+}
+.search-hotel__intro {
+  @include reset;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 21px;
+  color: $dark-title;
+}
+.search-hotel__text {
+  @include reset;
+  padding: 0 10px;
+  margin-bottom: 27px;
+}
+.search-hotel__button {
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
