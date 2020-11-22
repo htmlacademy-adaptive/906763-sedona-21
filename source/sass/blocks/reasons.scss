@@ -21,6 +21,9 @@
     background-color: $basic-blue;
     padding-bottom: 0;
   }
+  &--advantages {
+    @include reset;
+  }
   &--true-town {
     padding-top: 55px;
   }
@@ -45,6 +48,7 @@
 
 .reasons__number {
   @include reset;
+  margin-bottom: 15px;
 }
 .reasons__text {
   @include reset;
