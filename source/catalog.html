@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -46,11 +47,13 @@
           </a>
           <h3 class="photos__caption">Неродные просторы</h3>
           <p class="photos__author">Автор фото: Борис</p>
-          <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="photos__like-count">
-            <span class="visually-hidden">Количество лайков:</span>
-            1350
-          </p>
+          <div class="photos__like-wrapper">
+            <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
+            <p class="photos__like-count">
+              <span class="visually-hidden">Количество лайков:</span>
+              1350
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__link" aria-label="Открыть полноразмерное изображение">
@@ -59,11 +62,13 @@
           </a>
           <h3 class="photos__caption">Местная растительность</h3>
           <p class="photos__author">Автор фото: Сергей</p>
-          <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="photos__like-count">
-            <span class="visually-hidden">Количество лайков:</span>
-            143
-          </p>
+          <div class="photos__like-wrapper">
+            <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
+            <p class="photos__like-count">
+              <span class="visually-hidden">Количество лайков:</span>
+              143
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__link" aria-label="Открыть полноразмерное изображение">
@@ -72,11 +77,13 @@
           </a>
           <h3 class="photos__caption">Дорога на север</h3>
           <p class="photos__author">Автор фото: Петр</p>
-          <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="photos__like-count">
-            <span class="visually-hidden">Количество лайков:</span>
-            96
-          </p>
+          <div class="photos__like-wrapper">
+            <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
+            <p class="photos__like-count">
+              <span class="visually-hidden">Количество лайков:</span>
+              96
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__link" aria-label="Открыть полноразмерное изображение">
@@ -85,15 +92,17 @@
           </a>
           <h3 class="photos__caption">Мост дьявола</h3>
           <p class="photos__author">Автор фото: Антон</p>
-          <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
-          <p class="photos__like-count">
-            <span class="visually-hidden">Количество лайков:</span>
-            254
-          </p>
+          <div class="photos__like-wrapper">
+            <button class="photos__like" type="button" aria-label="Поставить лайк"></button>
+            <p class="photos__like-count">
+              <span class="visually-hidden">Количество лайков:</span>
+              254
+            </p>
+          </div>
         </li>
       </ul>
     </section>
-    <section class="video-content">
+    <section class="media-content__video-content video-content">
       <h2 class="visually-hidden">Видео Седоны</h2>
       <p class="video-content__intro">Все еще сомневаетесь?</p>
       <p class="video-content__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
