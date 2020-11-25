@@ -1,0 +1,20 @@
+.feedback {
+  padding-top: 36px;
+}
+.feedback__title {
+  @include reset;
+  margin-bottom: 27px;
+  color: $dark-title;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+.feedback__intro {
+  @include reset;
+  line-height: 24px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.feedback__form {
+}
+

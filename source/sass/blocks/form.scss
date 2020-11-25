@@ -1,0 +1,153 @@
+.form {
+}
+.form__fieldset {
+  @include reset;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border: none;
+}
+
+.form__caption {
+  margin: 0 auto;
+  color: $dark-title;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  &--contacts {
+    margin-bottom: 17px;
+  }
+  &--message {
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+.form__input-wrapper {
+  display: flex;
+  &--name, &--surname {
+    margin-bottom: 20px;
+  }
+}
+
+.form__label {
+  &--introduce {
+    margin-right: 13px;
+    align-self: center;
+  }
+  &--telephone {
+    margin-bottom: 8px;
+  }
+  &--email {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+.form__input {
+  flex-grow: 1;
+  height: 58px;
+  padding-left: 22px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $input-text;
+  background-color: $input-background;
+  border: 4px solid $input-background;
+  &:hover {
+    background-color: $input-background-hover;
+    border: 4px solid $input-background-hover;
+  }
+  &:active, &:focus {
+    background-color: $input-background-active;
+    border: 4px solid $input-background-hover;
+  }
+  &::placeholder {
+    color: $input-text;
+    opacity: 1;
+  }
+  &--telephone {
+    margin-bottom: 14px;
+  }
+}
+
+.form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input--telephone {
+}
+.form__input--email {
+}
+
+.form__radio-wrapper {
+  margin-bottom: 11px;
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__radio {
+}
+.form__radio-label, .form__checkbox-label {
+  padding-left: 78px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $input-text;
+  text-transform: none;
+}
+
+.form__checkbox-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__checkbox {
+}
+.form__checkbox-label {
+}
+.form__message {
+  display: block;
+  padding: 13px 21px;
+  margin-bottom: 51px;
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $font-family;
+  color: $input-text;
+  background-color: $input-background;
+  border: 4px solid $input-background;
+  outline: none;
+  resize: none;
+  &:hover {
+    background-color: $input-background-hover;
+    border: 4px solid $input-background-hover;
+  }
+  &:active, &:focus {
+    background-color: $input-background-active;
+    border: 4px solid $input-background-hover;
+  }
+  &::placeholder {
+    color: $input-text;
+    opacity: 1;
+  }
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 15px;
+}

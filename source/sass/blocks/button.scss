@@ -1,15 +1,21 @@
 .button {
   display: block;
+  font-family: $font-family;
   color: $light-text;
   font-weight: bold;
   font-size: 21px;
+  text-transform: uppercase;
   text-decoration: none;
   background-color: $basic-blue;
-  &:hover {
+  border: none;
+  &:hover, &:focus {
     background-color: $button-background-hover;
   }
   &:active {
     color: rgba($light-text, 0.3);
     background-color: $button-background-active;
+  }
+  &:disabled {
+    background-color: $button-background-disabled;
   }
 }
