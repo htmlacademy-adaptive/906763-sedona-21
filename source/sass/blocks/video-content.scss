@@ -1,0 +1,21 @@
+.video-content {
+  padding-top: 32px;
+  padding-bottom: 49px;
+}
+.video-content__intro {
+  @include reset;
+  margin-bottom: 24px;
+  color: $dark-title;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.video-content__text {
+  @include reset;
+  text-align: center;
+  margin-bottom: 33px;
+}
+.video-content__poster {
+  display: block;
+}

@@ -1,0 +1,53 @@
+.photos {
+}
+.photos__text {
+  @include reset;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.photos__list {
+  @include reset-list;
+}
+.photos__item {
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+.photos__link {
+}
+
+.photos__image {
+  display: block;
+  margin-bottom: 11px;
+}
+.photos__caption {
+  @include reset;
+  margin-bottom: 2px;
+  color: $dark-title;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__author {
+  @include reset;
+  margin-bottom: 10px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photos__like-wrapper {
+  display: flex;
+}
+
+.photos__like {
+  margin-right: 14px;
+  width: 23px;
+  height: 21px;
+  border: none;
+}
+.photos__like-count {
+  @include reset;
+  color: $dark-title;
+  font-weight: bold;
+  line-height: 24px;
+}

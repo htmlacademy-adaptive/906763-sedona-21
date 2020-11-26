@@ -1,0 +1,16 @@
+.media-content {
+  padding-top: 31px;
+}
+.media-content__title {
+  @include reset;
+  margin-bottom: 28px;
+  color: $dark-title;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.media-content__photos {
+}
+.media-content__video-content {
+}

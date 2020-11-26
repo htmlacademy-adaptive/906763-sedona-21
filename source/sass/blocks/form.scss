@@ -25,7 +25,8 @@
 
 .form__input-wrapper {
   display: flex;
-  &--name, &--surname {
+  &--name,
+  &--surname {
     margin-bottom: 20px;
   }
 }
@@ -60,7 +61,8 @@
     background-color: $input-background-hover;
     border: 4px solid $input-background-hover;
   }
-  &:active, &:focus {
+  &:active,
+  &:focus {
     background-color: $input-background-active;
     border: 4px solid $input-background-hover;
   }
@@ -94,7 +96,8 @@
 
 .form__radio {
 }
-.form__radio-label, .form__checkbox-label {
+.form__radio-label,
+.form__checkbox-label {
   padding-left: 78px;
   font-weight: bold;
   font-size: 18px;
@@ -135,7 +138,8 @@
     background-color: $input-background-hover;
     border: 4px solid $input-background-hover;
   }
-  &:active, &:focus {
+  &:active,
+  &:focus {
     background-color: $input-background-active;
     border: 4px solid $input-background-hover;
   }
