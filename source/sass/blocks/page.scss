@@ -1,8 +1,27 @@
 .page__body {
-  @include reset;
   font-family: $font-family;
   text-transform: uppercase;
   color: $dark-text;
+  background-color: white;
   font-size: 14px;
   line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .page {
+    background: $page-background;
+  }
+  .page__body {
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }
