@@ -11,9 +11,9 @@
 }
 .feedback__intro {
   @include reset;
+  margin: 0 auto;
+  max-width: 435px;
   line-height: 24px;
   padding-bottom: 16px;
   text-align: center;
-}
-.feedback__form {
 }

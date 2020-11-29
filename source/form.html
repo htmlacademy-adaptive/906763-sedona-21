@@ -62,7 +62,7 @@
           <input class="form__input form__input--email" type="email" name="email" id="email" required>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--impression">
         <legend class="form__caption">Вaше общее впечатление:</legend>
         <div class="form__radio-wrapper">
           <input class="visually-hidden" type="radio" name="impression" id="positive" value="positive" checked>
@@ -77,7 +77,7 @@
           <label class="form__radio-label" for="no-answer">Затрудняюсь ответить</label>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--attractions">
         <legend class="form__caption">Посещенные достопримечательности:</legend>
         <div class="form__checkbox-wrapper">
           <input class="visually-hidden" type="checkbox" name="attractions" id="devils-bridge" value="devils-bridge"
@@ -98,9 +98,11 @@
           <label class="form__checkbox-label" for="red-rocks">Красные скалы</label>
         </div>
       </fieldset>
-      <label class="form__caption form__caption--message" for="message">Опишите свои эмоции:</label>
-      <textarea class="form__message" name="message" id="message"
-        placeholder="Опишите подробно все свои восторги"></textarea>
+      <fieldset class="form__fieldset form__fieldset--message">
+        <label class="form__caption form__caption--message" for="message">Опишите свои эмоции:</label>
+        <textarea class="form__message" name="message" id="message"
+          placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
       <button class="form__button button" type="submit">Отправить отзыв</button>
     </form>
   </main>

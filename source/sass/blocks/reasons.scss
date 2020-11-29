@@ -79,8 +79,8 @@
     padding-left: 34px;
     &--expanded {
       grid-column: 1/-1;
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       padding: 0;
     }
     &--advantages {
@@ -88,14 +88,30 @@
       padding: 0;
     }
   }
-  .reasons__image--devils-bridge {
-    order: -1;
+  .reasons__image {
+    &--true-town {
+      grid-column: 2/4;
+      grid-row: 1/2;
+    }
+    &--devils-bridge {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
   }
+
   .reasons__text-wrapper {
     padding-top: 40px;
     padding-right: 32px;
     padding-left: 32px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    &--true-town {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    &--devils-bridge {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
   }
   .reasons__title {
     font-size: 21px;
