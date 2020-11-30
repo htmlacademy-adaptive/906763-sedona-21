@@ -34,12 +34,11 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding-top: 0;
+    padding: 0;
   }
   .advantages__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    grid-template-columns: repeat(3, 256px);
   }
   .advantages__item {
     padding: 0 30px 59px 30px;
@@ -52,5 +51,14 @@
   .advantages__title {
     padding-top: 158px;
     font-size: 21px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .advantages {
+    padding-top: 0;
+  }
+  .advantages__list {
+    grid-template-columns: repeat(3, 400px);
   }
 }
