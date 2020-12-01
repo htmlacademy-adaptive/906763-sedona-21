@@ -8,7 +8,10 @@
 .page-main__title {
   margin-top: 32px;
   margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 10px;
+  max-width: 520px;
   color: $dark-title;
   font-weight: bold;
   font-size: 18px;
@@ -17,4 +20,10 @@
 }
 .page-main__reasons {
 
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 21px;
+  }
 }

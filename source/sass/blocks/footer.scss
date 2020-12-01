@@ -15,3 +15,12 @@
 }
 .footer__copyright {
 }
+
+@media (min-width: $tablet-width) {
+  .footer__hashtag {
+    margin: 0;
+  }
+  .footer__socials {
+    margin: 0;
+  }
+}

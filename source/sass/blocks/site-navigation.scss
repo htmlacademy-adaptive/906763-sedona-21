@@ -22,17 +22,57 @@
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   }
 }
-
 .site-navigation__link {
   display: block;
   padding-top: 10px;
   padding-bottom: 5px;
   @include reset-link;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-background-hover;
   }
   &:active {
     color: rgba($light-text, 0.3);
     background-color: $button-background-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation__toggle {
+    display: none;
+  }
+  .site-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 34px;
+    padding-right: 25px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: white;
+    color: $menu;
+  }
+  .site-navigation__item {
+    box-shadow: none;
+  }
+    &:first-child {
+      box-shadow: none;
+  }
+  .site-navigation__link {
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: $basic-blue;
+    }
+    &:active {
+      color: $menu;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .site-navigation__list {
+    padding-left: 89px;
+    padding-right: 68px;
   }
 }

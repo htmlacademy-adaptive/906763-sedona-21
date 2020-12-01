@@ -1,0 +1,39 @@
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    max-width: $mobile-width-container;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $dekstop-width) {
+  .container {
+    max-width: $tablet-width-container;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .container {
+  max-width: $dekstop-width-container;
+  }
+}
+

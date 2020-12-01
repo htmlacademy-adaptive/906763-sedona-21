@@ -1,4 +1,3 @@
-
 .advantages {
   padding-top: 25px;
   background-color: white;
@@ -18,6 +17,8 @@
 .advantages__title {
   @include reset;
   margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .advantages__text {
@@ -29,4 +30,35 @@
 .advantages__title--souvenirs {
 }
 .advantages__title--food {
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 0;
+  }
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+  }
+  .advantages__item {
+    padding: 0 30px 59px 30px;
+    text-align: center;
+    &--food {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
+  .advantages__title {
+    padding-top: 158px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .advantages {
+    padding-top: 0;
+  }
+  .advantages__list {
+    grid-template-columns: repeat(3, 400px);
+  }
 }

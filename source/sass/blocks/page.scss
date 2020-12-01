@@ -1,8 +1,32 @@
+.page {
+  height: 100%;
+}
+
 .page__body {
-  @include reset;
   font-family: $font-family;
   text-transform: uppercase;
   color: $dark-text;
+  background-color: white;
   font-size: 14px;
   line-height: 21px;
+  background: $page-background;
+}
+
+.page__container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  background-color: white;
+}
+
+@media (min-width: $tablet-width) {
+  .page__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }

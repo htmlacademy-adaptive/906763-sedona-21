@@ -4,15 +4,19 @@
 .reasons__intro {
   margin-top: 0;
   margin-bottom: 27px;
+  padding: 0 20px;
   line-height: 26px;
   text-align: center;
 }
 .reasons__list {
   @include reset-list;
 }
+
 .reasons__item {
   padding-top: 25px;
   padding-bottom: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
   color: $dark-text;
   text-align: center;
   background-color: $basic-grey;
@@ -20,6 +24,8 @@
     color: $light-text;
     background-color: $basic-blue;
     padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
   &--advantages {
     @include reset;
@@ -34,11 +40,15 @@
 
 .reasons__text-wrapper {
   padding-bottom: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .reasons__title {
   @include reset;
   margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .reasons__title-text {
@@ -55,4 +65,79 @@
 }
 .reasons__image {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__list {
+    &--short {
+      display: grid;
+      grid-template-columns: repeat(3, 256px);
+    }
+  }
+  .reasons__item {
+    &--expanded {
+      padding: 0;
+    }
+    &--true-town {
+      display: grid;
+      grid-template-columns: 256px 512px;
+    }
+    &--devils-bridge {
+      display: grid;
+      grid-template-columns: 512px 256px;
+    }
+  }
+
+  .reasons__image {
+    &--devils-bridge {
+      order: -1;
+    }
+  }
+
+  .reasons__text-wrapper {
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+  .reasons__title {
+    font-size: 21px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .reasons__list {
+    &--short {
+      display: grid;
+      grid-template-columns: repeat(3, 400px);
+    }
+  }
+  .reasons__item {
+    &--expanded {
+      padding: 0;
+    }
+    &--true-town {
+      grid-template-columns: 400px 800px;
+    }
+    &--devils-bridge {
+      grid-template-columns: 800px 400px;
+    }
+  }
+
+  .reasons__item {
+    padding-top: 42px;
+    padding-right: 43px;
+    padding-bottom: 64px;
+    padding-left: 42px;
+    &--expanded {
+      padding: 0;
+    }
+  }
+  .reasons__text-wrapper {
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 40px;
+  }
 }
