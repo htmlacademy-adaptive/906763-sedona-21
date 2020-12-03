@@ -23,10 +23,10 @@
             <a class="site-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Фото и видео</a>
+            <a class="site-navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Форма отзыва</a>
+            <a class="site-navigation__link">Форма отзыва</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="#">HTML Academy</a>
@@ -55,12 +55,19 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__caption form__caption--contacts">Контактная информация:</legend>
           <div class="form__contacts-wrapper">
-            <legend class="form__caption form__caption--contacts">Контактная информация:</legend>
-            <label class="form__label form__label--telephone" for="telephone">Контактный телефон*:</label>
-            <input class="form__input form__input--telephone" type="tel" name="telephone" id="telephone" required>
-            <label class="form__label form__label--email" for="email">Электронная почта*:</label>
-            <input class="form__input form__input--email" type="email" name="email" id="email" required>
+            <div class="form__telephone-wrapper">
+              <label class="form__label form__label--telephone" for="telephone"><span
+                  class="form__label-temporary">Контактный</span> телефон*:</label>
+              <input class="form__input form__input--telephone" type="tel" name="telephone" id="telephone"
+                placeholder="Введите телефон" required>
+            </div>
+            <div class="form__email-wrapper">
+              <label class="form__label form__label--email" for="email">Электронная почта*:</label>
+              <input class="form__input form__input--email" type="email" name="email" id="email"
+                placeholder="Введите e-mail" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--impression">

@@ -230,4 +230,42 @@
   .form {
     grid-template-columns: 480px 480px;
   }
+  .form__checkbox-list {
+    grid-template-columns: repeat(4, 240px);
+  }
+  .form__label-temporary {
+    display: none;
+  }
+  .form__checkbox-wrapper {
+    &:nth-child(odd) {
+      padding-left: 0
+    }
+    &:nth-child(even) {
+      padding-left: 0;
+    }
+  }
+  .form__contacts-wrapper {
+    display: grid;
+    grid-template-columns: 480px 480px;
+  }
+  .form__telephone-wrapper {
+    display: flex;
+    padding-right: 80px;
+    align-items: center;
+  }
+  .form__email-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .form__input {
+    &--email {
+    width: auto;
+    flex-grow: 1;
+    margin-left: 18px;
+  }
+  &--telephone {
+    margin-bottom: 0;
+    margin-left: 16px;
+    }
+  }
 }
