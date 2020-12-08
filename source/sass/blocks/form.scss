@@ -161,7 +161,7 @@
 @media (min-width: $tablet-width) {
   .form {
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 50% 50%;
   }
   .form__fieldset{
     padding: 0;
@@ -207,7 +207,7 @@
   }
   .form__checkbox-list {
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 50% 50%;
   }
   .form__checkbox-wrapper {
     &:nth-child(odd) {
@@ -228,7 +228,7 @@
 
 @media (min-width: $dekstop-width) {
   .form {
-    grid-template-columns: 480px 480px;
+    grid-template-columns: 50% 50%;
   }
   .form__checkbox-list {
     grid-template-columns: repeat(4, 240px);
@@ -246,7 +246,7 @@
   }
   .form__contacts-wrapper {
     display: grid;
-    grid-template-columns: 480px 480px;
+    grid-template-columns: 50% 50%;
   }
   .form__telephone-wrapper {
     display: flex;
