@@ -343,7 +343,7 @@ img {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .container {
-    max-width: 768px; } }
+    max-width: 850px; } }
 
 @media (min-width: 1200px) {
   .container {
@@ -858,7 +858,7 @@ img {
 @media (min-width: 768px) {
   .form {
     display: grid;
-    grid-template-columns: 324px 324px; }
+    grid-template-columns: 50% 50%; }
   .form__fieldset {
     padding: 0; }
     .form__fieldset--impression {
@@ -891,7 +891,7 @@ img {
       margin-bottom: 54px; }
   .form__checkbox-list {
     display: grid;
-    grid-template-columns: 324px 324px; }
+    grid-template-columns: 50% 50%; }
   .form__checkbox-wrapper:nth-child(odd) {
     padding-left: 100px; }
   .form__checkbox-wrapper:nth-child(even) {
@@ -905,7 +905,7 @@ img {
 
 @media (min-width: 1200px) {
   .form {
-    grid-template-columns: 480px 480px; }
+    grid-template-columns: 50% 50%; }
   .form__checkbox-list {
     grid-template-columns: repeat(4, 240px); }
   .form__label-temporary {
@@ -916,7 +916,7 @@ img {
     padding-left: 0; }
   .form__contacts-wrapper {
     display: grid;
-    grid-template-columns: 480px 480px; }
+    grid-template-columns: 50% 50%; }
   .form__telephone-wrapper {
     display: flex;
     padding-right: 80px;
