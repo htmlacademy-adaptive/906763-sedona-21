@@ -21,6 +21,9 @@
 }
 .video-content__poster {
   display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,5 +37,9 @@
   }
   .video-content__text {
     margin-bottom: 64px;
+  }
+  .video-content__poster {
+    width: initial;
+    max-width: none;
   }
 }
