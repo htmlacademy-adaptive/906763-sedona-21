@@ -12,8 +12,11 @@
   <div class="page__container container">
     <header class="header">
       <a class="header__logo" href="index.html" aria-label="Перейти на главную странице">
-        <img class="header__logo-image" src="https://via.placeholder.com/102x84" alt="Логотип Седоны" height="84"
-          width="102">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype_desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype_tablet.svg">
+          <img class="header__logo-image" src="img/logotype_mobile.svg" alt="Логотип Седоны">
+        </picture>
       </a>
       <nav class="header__site-navigation site-navigation">
         <button class="site-navigation__toggle" type="button">
@@ -44,8 +47,12 @@
         <ul class="photos__list">
           <li class="photos__item photos__item--wide">
             <a class="photos__link" aria-label="Открыть полноразмерное изображение">
-              <img class="photos__image" src="https://via.placeholder.com/280x280" alt="Дорога, уходящая за горизонт"
-                width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/photo1_mobile.jpg" srcset="img/photo1_mobile@2x.jpg 2x"
+                  alt="Дорога, уходящая за горизонт">
+              </picture>
             </a>
             <div class="photos__description">
               <div class="photos__text-wrapper">
@@ -63,8 +70,12 @@
           </li>
           <li class="photos__item">
             <a class="photos__link" aria-label="Открыть полноразмерное изображение">
-              <img class="photos__image" src="https://via.placeholder.com/280x280"
-                alt="Местное растение на фона Красных скал" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo2_desktop.jpg 1x, img/photo2_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo2_tablet.jpg 1x, img/photo2_tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/photo2_mobile.jpg" srcset="img/photo2_mobile@2x.jpg 2x"
+                  alt="Местное растение на фона Красных скал">
+              </picture>
             </a>
             <div class="photos__description">
               <div class="photos__text-wrapper">
@@ -82,8 +93,12 @@
           </li>
           <li class="photos__item">
             <a class="photos__link" aria-label="Открыть полноразмерное изображение">
-              <img class="photos__image" src="https://via.placeholder.com/280x280" alt="Горный серпантин" width="280"
-                height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo3_desktop.jpg 1x, img/photo3_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo3_tablet.jpg 1x, img/photo3_tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/photo3_mobile.jpg" srcset="img/photo3_mobile@2x.jpg 2x"
+                  alt="Горный серпантин">
+              </picture>
             </a>
             <div class="photos__description photos__description--road">
               <div class="photos__text-wrapper">
@@ -101,8 +116,12 @@
           </li>
           <li class="photos__item">
             <a class="photos__link" aria-label="Открыть полноразмерное изображение">
-              <img class="photos__image" src="https://via.placeholder.com/280x280" alt="Мост дьявола" width="280"
-                height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo4_desktop.jpg 1x, img/photo4_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo4_tablet.jpg 1x, img/photo4_tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/photo4_mobile.jpg" srcset="img/photo4_mobile@2x.jpg 2x"
+                  alt="Мост дьявола">
+              </picture>
             </a>
             <div class="photos__description">
               <div class="photos__text-wrapper">
@@ -126,8 +145,12 @@
         <p class="video-content__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной
           раз!</p>
-        <img class="video-content__poster" src="https://via.placeholder.com/320x201" alt="Картинка-обложка для видео"
-          width="320" height="201">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video_desktop.jpg 1x, img/video_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video_tablet.jpg 1x, img/video_tablet@2x.jpg 2x">
+          <img class="video-content__poster" src="img/video_mobile.jpg" srcset="img/video_mobile@2x.jpg 2x"
+            alt="Картинка-обложка для видео">
+        </picture>
         <div class="video-content__controls video-controls">
           <div class="video-controls__scale-wrapper">
             <div class="video-controls__scale">
