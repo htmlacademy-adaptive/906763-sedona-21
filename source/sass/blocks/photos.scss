@@ -2,13 +2,18 @@
 }
 .photos__text {
   @include reset;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 480px;
   text-align: center;
 }
 .photos__list {
   @include reset-list;
 }
 .photos__item {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 22px;
   padding-bottom: 21px;
 }
@@ -18,6 +23,12 @@
 .photos__image {
   display: block;
   margin-bottom: 11px;
+  width: 100%;
+}
+.photos__wrapper {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .photos__caption {
   @include reset;
@@ -50,4 +61,73 @@
   color: $dark-title;
   font-weight: bold;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__text {
+    margin-bottom: 80px;
+  }
+  .photos__list {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .photos__item {
+    padding: 0;
+    &--wide {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+  }
+  .photos__description {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #f2f2f2;
+    &--road {
+      background-color:  #EAEAEA;
+    }
+  }
+  .photos__text-wrapper {
+    padding-left: 20px;
+  }
+  .photos__image {
+    margin: 0;
+  }
+  .photos__wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .photos__text {
+    margin-bottom: 85px;
+  }
+  .photos__list {
+    grid-template-columns: repeat(3, 400px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .photos__item {
+    padding-top: 0;
+    padding-bottom: 0;
+    &--wide {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+  }
+  .photos__description {
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
+    min-height: 80px;
+    color: white;
+    background-color: rgba($color: #000000, $alpha: 0.3)
+  }
+  .photos__caption {
+    color: white;
+  }
+  .photos__like-count {
+    color: white;
+  }
 }

@@ -13,9 +13,33 @@
 }
 .video-content__text {
   @include reset;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 33px;
+  max-width: 450px;
+  text-align: center;
 }
 .video-content__poster {
   display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-content {
+    padding-top: 59px;
+    padding-bottom: 40px;
+  }
+  .video-content__intro {
+    margin-bottom: 28px;
+    font-size: 30px;
+  }
+  .video-content__text {
+    margin-bottom: 64px;
+  }
+  .video-content__poster {
+    width: initial;
+    max-width: none;
+  }
 }

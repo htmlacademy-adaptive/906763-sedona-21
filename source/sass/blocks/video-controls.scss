@@ -1,13 +1,38 @@
 .video-controls {
 }
+
+.video-controls__scale-wrapper {
+  width: 280px;
+  height: 45px;
+  background-color: black;
+  opacity: 0.6;
+}
+
+
 .video-controls__scale {
+  width: 235px;
+  height: 3px;
+  background-color: white;
+  opacity: 0.2;
 }
 .video-controls__toggle {
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.video-controls__buttons {
-  background-color: $video-controls-mobile-bg;
 
+.video-controls__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  height: 66px;
+  background-color: $video-controls-mobile-bg;
 }
+
 .video-controls__button {
   border: none;
 }

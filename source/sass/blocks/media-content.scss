@@ -14,3 +14,22 @@
 }
 .media-content__video-content {
 }
+
+@media (min-width: $tablet-width) {
+  .media-content {
+    padding-top: 65px;
+  }
+  .media-content__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .media-content {
+    padding-top: 102px;
+  }
+  .media-content__title {
+    margin-bottom: 25px;
+  }
+}
