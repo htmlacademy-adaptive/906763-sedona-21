@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  z-index: 1;
+  width: 102px;
+  height: 84px;
+  left: 50%;
+  bottom: -23px;
+  transform: translateX(-50%);
+}

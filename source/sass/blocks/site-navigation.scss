@@ -41,6 +41,7 @@
 
 .site-navigation__list {
   @include reset-list;
+  position: relative;
   color: $light-text;
   font-weight: bold;
   font-size: 18px;
@@ -55,6 +56,13 @@
   }
   &:last-child {
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    &::before {
+      @include pseudo;
+      bottom: 0;
+      height: 7px;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
   }
 }
 .site-navigation__link {
