@@ -1,7 +1,42 @@
 .site-navigation {
+  position: relative;
 }
 
 .site-navigation__toggle {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--open {
+    display: inline-block;
+    width: 23px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+    background-image: url("/img/icon_menu.svg");
+    cursor: pointer;
+  }
+  &--close {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 1;
+    width: 23px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url("/img/icon_cross.svg");
+    border: none;
+  }
+}
+
+.site-navigation__button-wrapper {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 20px;
+  text-align: right;
 }
 
 .site-navigation__list {

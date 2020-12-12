@@ -19,9 +19,6 @@
         </picture>
       </a>
       <nav class="header__site-navigation site-navigation">
-        <button class="site-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="#">Главная</a>
@@ -36,6 +33,14 @@
             <a class="site-navigation__link" href="#">HTML Academy</a>
           </li>
         </ul>
+        <div class="site-navigation__button-wrapper">
+          <button class="site-navigation__toggle site-navigation__toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <button class="site-navigation__toggle site-navigation__toggle--close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       </nav>
     </header>
     <main class="page-main">
