@@ -24,6 +24,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 282px;
+  height: 214px;
 }
 
 .page-main__title {
@@ -45,9 +47,29 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
+    margin-top: 43px;
+    margin-bottom: 32px;
     font-size: 21px;
+
   }
   .page-main__promo {
     height: 518px;
+    padding-top: 78px;
+    background-image: url("/img/background_desktop.jpg");
+    &::before {
+      @include pseudo;
+      bottom: 0;
+      left: 50%;
+      width: $tablet-width-container;
+      height: 57px;
+      transform: translateX(-50%);
+      background-image: url("/img/intro_triangle.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+  .page-main__promo-image {
+    width: 461px;
+    height: 350px;
   }
 }

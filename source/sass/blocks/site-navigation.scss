@@ -84,11 +84,14 @@
   .site-navigation__toggle {
     display: none;
   }
+  .site-navigation__button-wrapper {
+    display: none;
+  }
   .site-navigation__list {
     display: flex;
     justify-content: space-between;
-    padding-left: 34px;
-    padding-right: 25px;
+    padding-left: 47px;
+    padding-right: 26px;
     font-size: 14px;
     line-height: 26px;
     background-color: white;
@@ -96,9 +99,24 @@
   }
   .site-navigation__item {
     box-shadow: none;
-  }
+    width: 130px;
     &:first-child {
       box-shadow: none;
+      text-align: start;
+    }
+    &:nth-child(2) {
+      text-align: start;
+      margin-right: 160px;
+    }
+    &:nth-child(3) {
+      text-align: end;
+    }
+    &:last-child {
+      text-align: end;
+      &::before {
+        display: none;
+      }
+    }
   }
   .site-navigation__link {
     &:hover,
@@ -110,6 +128,10 @@
       color: $menu;
       opacity: 0.3;
     }
+  }
+  .site-navigation__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 

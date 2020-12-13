@@ -17,6 +17,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    padding-top: 30px;
+  }
   .footer__hashtag {
     margin: 0;
   }

@@ -11,3 +11,9 @@
   bottom: -27px;
   transform: translateX(-50%);
 }
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    top: 0;
+  }
+}
