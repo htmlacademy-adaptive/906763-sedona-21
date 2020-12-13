@@ -142,7 +142,11 @@
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
+  .reasons__intro {
+    margin-bottom: 41px;
+  }
+
   .reasons__list {
     &--short {
       display: grid;
@@ -171,9 +175,12 @@
     }
   }
   .reasons__text-wrapper {
-    padding-top: 40px;
+    padding-top: 49px;
     padding-right: 32px;
     padding-left: 32px;
     padding-bottom: 40px;
+  }
+  .reasons__title {
+    padding: 0 70px;
   }
 }

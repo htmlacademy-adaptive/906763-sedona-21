@@ -50,7 +50,6 @@
     margin-top: 43px;
     margin-bottom: 32px;
     font-size: 21px;
-
   }
   .page-main__promo {
     height: 518px;
@@ -71,5 +70,16 @@
   .page-main__promo-image {
     width: 461px;
     height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__promo {
+    &::before {
+      width: 1200px;
+    }
+  }
+  .page-main__title {
+    margin-top: 55px;
   }
 }

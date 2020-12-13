@@ -25,15 +25,15 @@ img {
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $dekstop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .container {
     max-width: $tablet-width-container;
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .container {
-  max-width: $dekstop-width-container;
+  max-width: $desktop-width-container;
   }
 }
 
