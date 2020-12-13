@@ -77,6 +77,8 @@
 }
 .reasons__image {
   display: block;
+  height: 260px;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
