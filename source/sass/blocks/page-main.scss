@@ -55,6 +55,10 @@
     height: 518px;
     padding-top: 78px;
     background-image: url("/img/background_desktop.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background_desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
     &::before {
       @include pseudo;
       bottom: 0;
