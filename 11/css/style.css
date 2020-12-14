@@ -536,7 +536,7 @@ img {
   padding-top: 90px;
   box-sizing: border-box;
   background-color: #6d879c;
-  background-image: url(../img/background_mobile.jpg);
+  background-image: url("../img/background_mobile.jpg");
   background-repeat: no-repeat; }
   .page-main__promo::before {
     content: "";
@@ -547,7 +547,7 @@ img {
     width: 520px;
     height: 57px;
     transform: translateX(-50%);
-    background-image: url(../img/intro_triangle.svg);
+    background-image: url("../img/intro_triangle.svg");
     background-repeat: no-repeat;
     background-position: bottom; }
 
@@ -794,7 +794,7 @@ img {
     height: 37px;
     top: -7px;
     left: -50px;
-    background-image: url(../img/icon_house.svg);
+    background-image: url("../img/icon_house.svg");
     background-repeat: no-repeat; }
   .advantages__title--souvenirs::before {
     content: "";
@@ -804,7 +804,7 @@ img {
     height: 38px;
     top: -10px;
     left: -46px;
-    background-image: url(../img/icon_gift.svg);
+    background-image: url("../img/icon_gift.svg");
     background-repeat: no-repeat; }
   .advantages__title--food::before {
     content: "";
@@ -814,7 +814,7 @@ img {
     height: 35px;
     top: -5px;
     left: -52px;
-    background-image: url(../img/icon_burger.svg);
+    background-image: url("../img/icon_burger.svg");
     background-repeat: no-repeat; }
 
 @media (min-width: 768px) {
@@ -960,7 +960,7 @@ img {
     height: 15px;
     top: 16px;
     left: 13px;
-    background-image: url(../img/icon_twitter.svg);
+    background-image: url("../img/icon_twitter.svg");
     background-repeat: no-repeat; }
   .socials__link--facebook::before {
     content: "";
@@ -970,7 +970,7 @@ img {
     height: 19px;
     top: 13px;
     left: 18px;
-    background-image: url(../img/icon_facebook.svg);
+    background-image: url("../img/icon_facebook.svg");
     background-repeat: no-repeat; }
   .socials__link--youtube::before {
     content: "";
@@ -980,7 +980,7 @@ img {
     height: 14px;
     top: 17px;
     left: 13px;
-    background-image: url(../img/icon_youtube.svg);
+    background-image: url("../img/icon_youtube.svg");
     background-repeat: no-repeat; }
 
 .copyright {
