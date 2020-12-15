@@ -1,13 +1,36 @@
 .page-main {
 }
 .page-main__promo {
-
+  position: relative;
+  height: 389px;
+  padding-top: 90px;
+  box-sizing: border-box;
+  background-color: #6d879c;
+  background-image: url("../img/background_mobile.jpg");
+  background-repeat: no-repeat;
+  &::before {
+    @include pseudo;
+    bottom: 0;
+    left: 50%;
+    width: $mobile-width-container;
+    height: 57px;
+    transform: translateX(-50%);
+    background-image: url("../img/intro_triangle.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 .page-main__promo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 282px;
+  height: 214px;
 }
+
 .page-main__title {
   margin-top: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 29px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
@@ -24,6 +47,43 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
+    margin-top: 43px;
+    margin-bottom: 32px;
     font-size: 21px;
+  }
+  .page-main__promo {
+    height: 518px;
+    padding-top: 78px;
+    background-image: url(../img/background_desktop.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/background_desktop@2x.jpg);
+      background-size: 1200px auto;
+    }
+    &::before {
+      @include pseudo;
+      bottom: 0;
+      left: 50%;
+      width: $tablet-width-container;
+      height: 57px;
+      transform: translateX(-50%);
+      background-image: url(../img/intro_triangle.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+  .page-main__promo-image {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__promo {
+    &::before {
+      width: 1200px;
+    }
+  }
+  .page-main__title {
+    margin-top: 55px;
   }
 }

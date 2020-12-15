@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  z-index: 1;
+  width: 102px;
+  height: 84px;
+  left: 50%;
+  bottom: -27px;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    width: 187px;
+    height: 96px;
+    left: 50%;
+  transform: translateX(-50%);
+  }
+}

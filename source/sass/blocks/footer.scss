@@ -1,22 +1,25 @@
 .footer {
   padding-bottom: 22px;
-  padding-top: 38px;
+  padding-top: 36px;
 }
 .footer__hashtag {
   @include reset;
-  margin-bottom: 33px;
+  margin-bottom: 36px;
   color: $dark-title;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
 }
 .footer__socials {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 .footer__copyright {
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    padding-top: 30px;
+  }
   .footer__hashtag {
     margin: 0;
   }
