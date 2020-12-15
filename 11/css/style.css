@@ -649,7 +649,7 @@ img {
       width: 520px;
       height: 37px;
       transform: translateX(-50%);
-      background-image: url("/img/mask.svg");
+      background-image: url("../img/mask.svg");
       background-repeat: no-repeat;
       background-position: top; }
   .reasons__item--devils-bridge {
