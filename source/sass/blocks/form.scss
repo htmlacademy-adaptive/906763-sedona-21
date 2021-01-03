@@ -112,9 +112,38 @@
   flex-direction: column;
 }
 
-.form__input--telephone {
-}
-.form__input--email {
+.form__input-box{
+  position: relative;
+  &::before {
+    @include pseudo;
+    width: 58px;
+    height: 58px;
+    top: 0;
+    right: 0;
+    background-color: $input-icons-bg;
+  }
+  &--telephone {
+    &::after {
+      @include pseudo;
+      width: 18px;
+      height: 18px;
+      top: 20px;
+      right: 20px;
+      background-image: url("../img/phone.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &--email {
+    &::after {
+      @include pseudo;
+      width: 16px;
+      height: 12px;
+      top: 23px;
+      right: 22px;
+      background-image: url("../img/mail.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .form__radio-wrapper {
@@ -357,3 +386,5 @@
     margin-left: 16px;
   }
 }
+
+
