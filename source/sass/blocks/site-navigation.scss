@@ -37,11 +37,11 @@
   padding-bottom: 17px;
   padding-right: 20px;
   text-align: right;
+  background-color: white;
 }
 
 .site-navigation__list {
   @include reset-list;
-  position: relative;
   color: $light-text;
   font-weight: bold;
   font-size: 18px;
@@ -49,6 +49,7 @@
   background-color: $basic-blue;
 }
 .site-navigation__item {
+  position: relative;
   text-align: center;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   &:first-child {

@@ -1,11 +1,9 @@
 .feedback {
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 39px;
 }
 .feedback__title {
   @include reset;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   color: $dark-title;
   font-weight: bold;
   font-size: 18px;
@@ -14,7 +12,10 @@
 .feedback__intro {
   @include reset;
   margin: 0 auto;
-  padding-bottom: 16px;
+  padding-bottom: 19px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
   max-width: 470px;
   line-height: 24px;
   text-align: center;
@@ -33,11 +34,12 @@
   }
   .feedback__intro {
     padding-bottom: 83px;
-  }
+}
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
+    box-sizing: border-box;
     padding-top: 114px;
     padding-left: 120px;
     padding-right: 120px;
