@@ -16,24 +16,24 @@
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
-  max-width: 470px;
+  max-width: 510px;
   line-height: 24px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding-top: 63px;
+    padding-top: 67px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 61px;
   }
   .feedback__title {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 30px;
   }
   .feedback__intro {
-    padding-bottom: 83px;
+    padding-bottom: 86px;
 }
 }
 

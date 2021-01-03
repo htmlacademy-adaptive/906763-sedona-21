@@ -48,12 +48,40 @@
 
 
 @media (min-width: $tablet-width) {
+  .header {
+    &--inner {
+      padding-bottom: 288px;
+      background-image: url("../img/background_desktop.jpg");
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background_desktop@2x.jpg");
+      }
+      &::before {
+        @include pseudo;
+        width: $tablet-width-container;
+      }
+      &::after {
+        @include pseudo;
+        width: 457px;
+        height: 78px;
+        bottom: 117px;
+      }
+    }
+  }
   .header__logo {
     top: 0;
   }
+
 }
 
 @media (min-width: $desktop-width) {
+  .header {
+    &--inner {
+      &::before {
+        @include pseudo;
+        width: $desktop-width-container;
+      }
+    }
+  }
   .header__logo {
     width: 187px;
     height: 96px;
