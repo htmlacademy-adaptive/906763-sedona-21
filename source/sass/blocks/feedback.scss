@@ -16,7 +16,7 @@
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
-  max-width: 510px;
+  max-width: 467px;
   line-height: 24px;
   text-align: center;
 }
@@ -40,9 +40,12 @@
 @media (min-width: $desktop-width) {
   .feedback {
     box-sizing: border-box;
-    padding-top: 114px;
+    padding-top: 116px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 66px;
+    padding-bottom: 68px;
+  }
+  .feedback__intro {
+    padding-bottom: 58px;
   }
 }

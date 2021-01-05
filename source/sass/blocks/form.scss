@@ -382,6 +382,8 @@
       margin-bottom: 20px;
     }
     &--impression {
+      margin-left: 0;
+      margin-right: 0;
       margin-bottom: 57px;
     }
     &--attractions {
@@ -416,12 +418,6 @@
     margin-bottom: 21px;
   }
 
-  .form__caption {
-    &--impression {
-    margin-left: 0;
-    margin-right: 0;
-    }
-  }
   .form__label {
     &--telephone,
     &--email {
@@ -450,6 +446,9 @@
   .form__checkbox-list {
     grid-template-columns: repeat(4, 240px);
   }
+  .form__checkbox-label {
+    padding-left: 81px;
+  }
   .form__label-temporary {
     display: none;
   }
@@ -474,14 +473,95 @@
     display: flex;
     align-items: center;
   }
-  .form__input--email {
-    width: auto;
-    flex-grow: 1;
-    margin-left: 18px;
+  .form__input {
+    &--telephone {
+      margin-bottom: 0;
+      margin-left: 16px;
+      width: 257px;
+    }
+    &--email {
+      width: auto;
+      flex-grow: 1;
+      margin-left: 21px;
+      width: 257px;
+    }
   }
-  .form__input--telephone {
-    margin-bottom: 0;
-    margin-left: 16px;
+  .form__caption {
+    &--impression {
+      padding-left: 76px;
+    }
+    &--contacts {
+      margin-bottom: 70px;
+    }
+    &--attractions {
+      margin-bottom: 41px;
+    }
+  }
+  .form__fieldset-wrapper {
+    &--impression {
+      padding-left: 4px;
+    }
+    &--introduce {
+      padding-left: 81px;
+    }
+    &--contacts {
+      margin-bottom: 53px;
+      &::after {
+        width: 280px;
+      }
+      &::before {
+        width: 280px;
+      }
+    }
+    &--attractions {
+      margin-bottom: 40px;
+      &::after {
+        width: 280px;
+      }
+      &::before {
+        width: 280px;
+      }
+    }
+    &--message {
+      &::after {
+        width: 280px;
+      }
+      &::before {
+        width: 280px;
+      }
+    }
+  }
+  .form__radio-label {
+    padding-top: 16px;
+    padding-left: 75px;
+  }
+  .form__label {
+    &--introduce {
+      margin-right: 16px;
+    }
+    &--telephone {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    &--email {
+      padding-left: 0;
+      margin-bottom: 0;
+      white-space: nowrap;
+    }
+  }
+  .form__input-box {
+    &--telephone {
+      margin-bottom: 0;
+    }
+  }
+  .form__checkbox-wrapper:nth-child(2) {
+    padding-left: 20px;
+  }
+  .form__checkbox-wrapper:nth-child(3) {
+    padding-left: 38px;
+  }
+  .form__checkbox-wrapper:nth-child(4) {
+    padding-left: 35px;
   }
 }
 

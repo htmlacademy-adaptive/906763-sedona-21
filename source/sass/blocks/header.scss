@@ -76,6 +76,7 @@
 @media (min-width: $desktop-width) {
   .header {
     &--inner {
+      padding-bottom: 299px;
       &::before {
         @include pseudo;
         width: $desktop-width-container;
