@@ -2,20 +2,44 @@
 }
 .photos__text {
   @include reset;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   margin-right: auto;
   margin-left: auto;
   max-width: 480px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
+  line-height: 24px;
 }
 .photos__list {
   @include reset-list;
+
 }
+
 .photos__item {
+  position: relative;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
-  padding-bottom: 21px;
+  padding-bottom: 16px;
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+  }
+  &:last-child {
+    &::after {
+      @include pseudo;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #E5E5E5;
+    }
+  }
 }
 .photos__link {
 }
@@ -41,7 +65,7 @@
 
 .photos__author {
   @include reset;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   line-height: 24px;
   text-transform: none;
 }
@@ -51,10 +75,21 @@
 }
 
 .photos__like {
+  position: relative;
   margin-right: 14px;
   width: 23px;
   height: 21px;
   border: none;
+  background-color: transparent;
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/like_icon.svg");
+    background-repeat: no-repeat;
+  }
 }
 .photos__like-count {
   @include reset;

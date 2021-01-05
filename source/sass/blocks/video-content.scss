@@ -4,7 +4,7 @@
 }
 .video-content__intro {
   @include reset;
-  margin-bottom: 24px;
+  margin-bottom: 29px;
   color: $dark-title;
   font-weight: bold;
   font-size: 18px;
@@ -16,8 +16,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 33px;
+  padding-left: 40px;
+  padding-right: 40px;
   max-width: 450px;
   text-align: center;
+  line-height: 24px;
 }
 .video-content__poster {
   display: block;

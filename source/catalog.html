@@ -10,8 +10,8 @@
 
 <body class="page__body">
   <div class="page__container container">
-    <header class="header">
-      <a class="header__logo" href="index.html" aria-label="Перейти на главную странице">
+    <header class="header header--inner">
+      <a class="header__logo header__logo--inner">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype_desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype_tablet.svg">
@@ -19,23 +19,28 @@
         </picture>
       </a>
       <nav class="header__site-navigation site-navigation">
-        <button class="site-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link">Фото и видео</a>
+            <a class="site-navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="form.html">Форма отзыва</a>
+            <a class="site-navigation__link" href="#">Форма отзыва</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="#">HTML Academy</a>
           </li>
         </ul>
+        <div class="site-navigation__button-wrapper">
+          <button class="site-navigation__toggle site-navigation__toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <button class="site-navigation__toggle site-navigation__toggle--close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       </nav>
     </header>
     <main class="media-content">
@@ -191,7 +196,7 @@
             <a class="socials__link socials__link--facebook" href="#" aria-label="Facebook"></a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--vkontakte" href="#" aria-label="ВКонтакте"></a>
+            <a class="socials__link socials__link--youtube" href="#" aria-label="ВКонтакте"></a>
           </li>
         </ul>
       </section>

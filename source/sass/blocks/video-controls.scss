@@ -2,24 +2,35 @@
 }
 
 .video-controls__scale-wrapper {
+  position: relative;
+  margin-top: -45px;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   height: 45px;
-  background-color: black;
-  opacity: 0.6;
+  background-color: rgba(#000000, 0.6);
 }
 
 
 .video-controls__scale {
+  position: absolute;
   width: 235px;
   height: 3px;
-  background-color: white;
-  opacity: 0.2;
+  top: 22px;
+  left: 22px;
+  background-color: rgba(#ffffff, 0.2);
 }
+
 .video-controls__toggle {
+  position: absolute;
+  z-index: 1;
+  padding: 0;
+  top: -2px;
+  left: 36px;
   display: block;
-  width: 13px;
-  height: 13px;
-  background-color: white;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -28,6 +39,8 @@
 .video-controls__buttons {
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   height: 66px;
   background-color: $video-controls-mobile-bg;
