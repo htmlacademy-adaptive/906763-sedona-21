@@ -43,12 +43,39 @@
   margin-right: auto;
   width: 280px;
   height: 66px;
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-right: 23px;
+  box-sizing: border-box;
   background-color: $video-controls-mobile-bg;
 }
 
 .video-controls__button {
+  padding: 0;
   border: none;
+  fill: $video-controls-mobile;
+  &:hover,
+  &:focus {
+    fill: $video-controls-mobile-hover;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--replay {
+    width: 16px;
+    height: 20px;
+  }
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+  }
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+    margin-left: 27px;
+  }
 }
+
 
 .video-controls__button--replay {
 }
