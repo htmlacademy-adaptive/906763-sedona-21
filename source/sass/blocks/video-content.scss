@@ -46,3 +46,13 @@
     max-width: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .video-content {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  .video-content__text {
+    margin-bottom: 78px;
+  }
+}

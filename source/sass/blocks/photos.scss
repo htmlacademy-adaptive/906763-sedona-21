@@ -147,7 +147,7 @@
 
 @media (min-width: $desktop-width) {
   .photos__text {
-    margin-bottom: 85px;
+    margin-bottom: 77px;
   }
   .photos__list {
     grid-template-columns: repeat(3, 400px);
@@ -175,5 +175,10 @@
   }
   .photos__like-count {
     color: white;
+  }
+  .photos__like {
+    &::before {
+      background-image: url("../img/like_icon_desktop.svg");
+    }
   }
 }
