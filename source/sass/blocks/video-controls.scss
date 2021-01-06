@@ -25,8 +25,8 @@
   position: absolute;
   z-index: 1;
   padding: 0;
-  top: -2px;
-  left: 36px;
+  top: -3px;
+  left: 15%;
   display: block;
   width: 9px;
   height: 9px;
@@ -54,6 +54,7 @@
   padding: 0;
   border: none;
   fill: $video-controls-mobile;
+  background-color: transparent;
   &:hover,
   &:focus {
     fill: $video-controls-mobile-hover;
@@ -76,10 +77,47 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .video-controls {
+    position: relative;
+    width: 648px;
+    margin: 0 auto;
+  }
 
-.video-controls__button--replay {
-}
-.video-controls__button--subtitles {
-}
-.video-controls__button--fullscreen {
+  .video-controls__buttons {
+    position: relative;
+    width: 648px;
+    height: 93px;
+    margin-top: -93px;
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-right: 41px;
+    background-color: rgba(#000000, 0.6);
+  }
+  .video-controls__button {
+    fill: $video-controls;
+  }
+  .video-controls__scale-wrapper {
+    position: absolute;
+    margin-right: 0;
+    margin-left: 0;
+    left: 93px;
+    bottom:0;
+    width: 389px;
+    height: 93px;
+    background-color: rgba(#000000, 0);
+  }
+  .video-controls__scale {
+    position: absolute;
+    z-index: 1;
+    width: 389px;
+    height: 3px;
+    top: 45px;
+    left: 0;
+    background-color: rgba(#ffffff, 0.2);
+  }
+  .video-controls__toggle {
+    left: 29%;
+    top:-3px;
+  }
 }
