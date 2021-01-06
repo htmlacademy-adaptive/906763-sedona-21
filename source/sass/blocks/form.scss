@@ -192,8 +192,19 @@
   border-radius: 50%;
 }
 
+.form__radio-input:hover + .form__radio-label::before,
+.form__radio-input:focus + .form__radio-label::before {
+  background-color: $toggle-background-hover;
+  border: 17px solid $toggle-background-hover;
+}
+
 .form__radio-input:checked + .form__radio-label::before {
   background-color: $toggle;
+}
+
+.form__radio-input:active + .form__radio-label::before {
+  background-color: rgba($toggle, 0.3);
+  border: 17px solid $toggle-background-active;
 }
 
 
@@ -213,6 +224,16 @@
   background-color: $toggle-background;
 }
 
+.form__checkbox-input:hover + .form__checkbox-label::before,
+.form__checkbox-input:focus + .form__checkbox-label::before {
+  background-color: $toggle-background-hover;
+}
+
+.form__checkbox-input:active + .form__checkbox-label::before {
+  background-color: $toggle-background-active;
+}
+
+
 .form__checkbox-input:checked + .form__checkbox-label::after {
   @include pseudo;
   background-image: url("../img/tick.svg");
@@ -221,6 +242,11 @@
   top: 19px;
   left: 16px;
 }
+
+.form__checkbox-input:active + .form__checkbox-label::after {
+  opacity: 0.3;
+}
+
 
 .form__checkbox-wrapper {
   margin-bottom: 24px;
