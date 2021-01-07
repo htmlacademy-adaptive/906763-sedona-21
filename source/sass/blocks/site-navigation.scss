@@ -36,10 +36,16 @@
   }
 }
 
+.site-navigation--nojs .site-navigation__toggle {
+  display: none;
+}
+
 .site-navigation__button-wrapper {
   padding-top: 12px;
   padding-bottom: 17px;
   padding-right: 20px;
+  height: 56px;
+  box-sizing: border-box;
   text-align: right;
   background-color: white;
 }
@@ -51,6 +57,16 @@
   font-size: 18px;
   line-height: 40px;
   background-color: $basic-blue;
+}
+
+.site-navigation .site-navigation__toggle--close,
+.site-navigation .site-navigation__list {
+  display: none;
+}
+
+.site-navigation--opened .site-navigation__toggle--close,
+.site-navigation--opened .site-navigation__list {
+  display: block;
 }
 
 .site-navigation__item {
