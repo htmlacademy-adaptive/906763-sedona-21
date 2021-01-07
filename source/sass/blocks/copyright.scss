@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
 }
+
 .copyright__text {
   @include reset;
   margin-right: 5px;
@@ -13,12 +14,9 @@
   &:hover {
     fill: $basic-blue;
   }
+
   &:active {
     color: black;
     opacity: 0.3;
   }
-}
-.copyright__logo {
-}
-.copyright__logo-image {
 }

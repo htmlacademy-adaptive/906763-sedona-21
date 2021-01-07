@@ -1,32 +1,36 @@
-.socials {
-}
-
 .socials__list {
+  @include reset-list;
   display: flex;
   justify-content: center;
-  @include reset-list;
 }
+
 .socials__item {
   margin-right: 6px;
+
   &:last-child {
     margin-right: 0;
   }
 }
+
 .socials__link {
   position: relative;
   display: block;
   width: 46px;
   height: 48px;
   background-color: $basic-blue;
+
   &:hover {
     background-color: $button-background-hover;
   }
+
   &:active {
     background-color: $button-background-active;
+
     &::before {
       opacity: 0.3;
     }
   }
+
   &--twitter {
     &::before {
       @include pseudo;
@@ -38,6 +42,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &--facebook {
     &::before {
       @include pseudo;
@@ -49,6 +54,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &--youtube {
     &::before {
       @include pseudo;

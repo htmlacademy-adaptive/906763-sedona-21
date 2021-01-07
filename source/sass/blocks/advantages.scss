@@ -2,10 +2,11 @@
   padding-top: 25px;
   background-color: white;
 }
+
 .advantages__list {
   @include reset-list;
-
 }
+
 .advantages__item {
   position: relative;
   padding-left: 70px;
@@ -13,6 +14,7 @@
   padding-bottom: 15px;
   padding-right: 20px;
   text-align: left;
+
   &--food {
     padding-bottom: 34px;
   }
@@ -28,6 +30,7 @@
   font-size: 18px;
   line-height: 26px;
   position: relative;
+
   &--house {
     &::before {
       @include pseudo;
@@ -39,6 +42,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &--souvenirs {
     &::before {
       @include pseudo;
@@ -50,6 +54,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &--food {
     &::before {
       @include pseudo;
@@ -67,22 +72,27 @@
   .advantages {
     padding: 0;
   }
+
   .advantages__list {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
   }
+
   .advantages__item {
     padding: 0 30px 59px 30px;
     text-align: center;
+
     &--food {
       grid-column: 2/3;
       grid-row: 1/2;
     }
   }
+
   .advantages__title {
     margin-bottom: 24px;
     padding-top: 157px;
     font-size: 21px;
+
     &--house {
       &::before {
         width: 75px;
@@ -92,6 +102,7 @@
         transform: translateX(-50%);
       }
     }
+
     &--souvenirs {
       &::before {
         width: 64px;
@@ -101,6 +112,7 @@
         transform: translateX(-50%);
       }
     }
+
     &--food {
       &::before {
         width: 76px;
@@ -118,9 +130,11 @@
   .advantages {
     padding-top: 0;
   }
+
   .advantages__list {
     grid-template-columns: repeat(3, 400px);
   }
+
   .advantages__item {
     padding-bottom: 81px;
   }

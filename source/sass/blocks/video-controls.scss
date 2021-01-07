@@ -1,6 +1,3 @@
-.video-controls {
-}
-
 .video-controls__scale-wrapper {
   position: relative;
   margin-top: -45px;
@@ -10,7 +7,6 @@
   height: 45px;
   background-color: rgba(#000000, 0.6);
 }
-
 
 .video-controls__scale {
   position: absolute;
@@ -55,21 +51,26 @@
   border: none;
   fill: $video-controls-mobile;
   background-color: transparent;
+
   &:hover,
   &:focus {
     fill: $video-controls-mobile-hover;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   &--replay {
     width: 16px;
     height: 20px;
   }
+
   &--subtitles {
     width: 32px;
     height: 20px;
   }
+
   &--fullscreen {
     width: 20px;
     height: 20px;
@@ -94,19 +95,22 @@
     padding-right: 41px;
     background-color: rgba(#000000, 0.6);
   }
+
   .video-controls__button {
     fill: $video-controls;
   }
+
   .video-controls__scale-wrapper {
     position: absolute;
     margin-right: 0;
     margin-left: 0;
     left: 93px;
-    bottom:0;
+    bottom: 0;
     width: 389px;
     height: 93px;
     background-color: rgba(#000000, 0);
   }
+
   .video-controls__scale {
     position: absolute;
     z-index: 1;
@@ -116,6 +120,7 @@
     left: 0;
     background-color: rgba(#ffffff, 0.2);
   }
+
   .video-controls__toggle {
     left: 29%;
     top: -3px;
@@ -126,13 +131,16 @@
   .video-controls {
     width: 800px;
   }
+
   .video-controls__buttons {
     width: 800px;
     padding-right: 43px;
   }
+
   .video-controls__scale {
     width: 540px;
   }
+
   .video-controls__toggle {
     left: 21%;
   }

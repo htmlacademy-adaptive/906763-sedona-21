@@ -1,6 +1,3 @@
-.form {
-
-}
 .form__fieldset {
   @include reset;
   border: none;
@@ -12,19 +9,22 @@
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
+
   &--impression {
     padding-top: 23px;
   }
+
   &--attractions {
     padding-top: 15px;
   }
+
   &::before {
     @include pseudo;
     height: 1px;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 }
 
@@ -37,18 +37,23 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
   &--introduce {
     margin-bottom: 18px;
   }
+
   &--contacts {
     margin-bottom: 18px;
   }
+
   &--message {
     margin-bottom: 15px;
   }
+
   &--impression {
     margin-bottom: 23px;
   }
+
   &--attractions {
     margin-bottom: 20px;
   }
@@ -56,6 +61,7 @@
 
 .form__input-wrapper {
   display: flex;
+
   &--name,
   &--surname {
     margin-bottom: 20px;
@@ -64,13 +70,16 @@
 
 .form__label {
   display: inline-block;
+
   &--introduce {
     margin-right: 9px;
     align-self: center;
   }
+
   &--telephone {
     margin-bottom: 12px;
   }
+
   &--email {
     margin-bottom: 9px;
   }
@@ -89,19 +98,23 @@
   color: $input-text;
   background-color: $input-background;
   border: 4px solid $input-background;
+
   &:hover {
     background-color: $input-background-hover;
     border: 4px solid $input-background-hover;
   }
+
   &:active,
   &:focus {
     background-color: $input-background-active;
     border: 4px solid $input-background-hover;
   }
+
   &::placeholder {
     color: $input-text;
     opacity: 1;
   }
+
   &--telephone {
     margin-bottom: 16px;
   }
@@ -112,12 +125,13 @@
   flex-direction: column;
 }
 
-.form__input-box{
+.form__input-box {
   position: relative;
   height: 58px;
   min-width: 150px;
   width: 100%;
   box-sizing: border-box;
+
   &::before {
     @include pseudo;
     width: 58px;
@@ -126,6 +140,7 @@
     right: 0;
     background-color: $input-icons-bg;
   }
+
   &--telephone {
     &::after {
       @include pseudo;
@@ -137,6 +152,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &--email {
     &::after {
       @include pseudo;
@@ -154,13 +170,12 @@
   margin-bottom: 11px;
   display: flex;
   flex-direction: column;
+
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.form__radio {
-}
 .form__radio-label,
 .form__checkbox-label {
   position: relative;
@@ -207,7 +222,6 @@
   border: 17px solid $toggle-background-active;
 }
 
-
 .form__checkbox-label {
   min-height: 56px;
   padding-top: 16px;
@@ -233,7 +247,6 @@
   background-color: $toggle-background-active;
 }
 
-
 .form__checkbox-input:checked + .form__checkbox-label::after {
   @include pseudo;
   background-image: url("../img/tick.svg");
@@ -250,14 +263,10 @@
 .form__checkbox-wrapper {
   margin-bottom: 24px;
   display: flex;
+
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.form__checkbox {
-}
-.form__checkbox-label {
 }
 
 .form__message {
@@ -276,15 +285,18 @@
   border: 4px solid $input-background;
   outline: none;
   resize: none;
+
   &:hover {
     background-color: $input-background-hover;
     border: 4px solid $input-background-hover;
   }
+
   &:active,
   &:focus {
     background-color: $input-background-active;
     border: 4px solid $input-background-hover;
   }
+
   &::placeholder {
     color: $input-text;
     opacity: 1;
@@ -297,6 +309,7 @@
   padding-top: 18px;
   padding-bottom: 15px;
 }
+
 .form__required-fields {
   display: none;
 }
@@ -312,130 +325,155 @@
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
   .form__fieldset-wrapper {
     padding: 0;
+
     &::before {
       display: none;
     }
+
     &--impression {
       grid-column: 1/2;
       grid-row: 1/2;
       position: relative;
     }
+
     &--contacts {
       position: relative;
       grid-column: 1/-1;
       margin-bottom: 51px;
+
       &::after {
         @include pseudo;
         width: 123px;
         height: 1px;
         top: 10px;
         right: 0;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
       }
+
       &::before {
         @include pseudo;
         width: 123px;
         height: 1px;
         top: 10px;
         left: 0;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
       }
     }
+
     &--attractions {
       position: relative;
       grid-column: 1/-1;
       margin-bottom: 41px;
+
       &::after {
         @include pseudo;
         width: 123px;
         height: 1px;
         top: 27px;
         right: 0;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
       }
+
       &::before {
         @include pseudo;
         width: 123px;
         height: 1px;
         top: 27px;
         left: 0;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
       }
     }
+
     &--message {
       position: relative;
       grid-column: 1/-1;
+
       &::after {
         @include pseudo;
         width: 123px;
         height: 1px;
         top: 10px;
         right: 0;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
       }
+
       &::before {
         @include pseudo;
         width: 123px;
         height: 1px;
         top: 10px;
         left: 0;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
       }
     }
+
     &--introduce {
       padding-left: 55px;
       margin-bottom: 72px;
+
       &::before {
         @include pseudo;
         width: 1px;
         height: 292px;
         left: -1px;
         top: 0;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
       }
     }
   }
+
   .form__caption {
     font-size: 21px;
+
     &--introduce {
       margin-left: 0;
       margin-bottom: 56px;
     }
+
     &--contacts {
       margin-bottom: 20px;
     }
+
     &--impression {
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 57px;
     }
+
     &--attractions {
       max-width: 350px;
       margin-bottom: 45px;
     }
+
     &--message {
       margin-bottom: 57px;
     }
   }
+
   .form__checkbox-list {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
   .form__checkbox-wrapper {
     margin-bottom: 30px;
+
     &:nth-child(odd) {
       padding-left: 96px;
     }
+
     &:nth-child(even) {
       padding-left: 31px;
     }
   }
+
   .form__required-fields {
+    @include reset;
     display: block;
     align-self: center;
-    @include reset;
     text-align: right;
   }
 
@@ -449,14 +487,17 @@
       padding-left: 22px;
     }
   }
+
   .form__input-box {
     &--telephone {
       margin-bottom: 27px;
     }
   }
+
   .form__message {
     margin-bottom: 57px;
   }
+
   .form__button-wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -468,126 +509,154 @@
   .form {
     grid-template-columns: 50% 50%;
   }
+
   .form__checkbox-list {
     grid-template-columns: repeat(4, 240px);
   }
+
   .form__checkbox-label {
     padding-left: 81px;
   }
+
   .form__label-temporary {
     display: none;
   }
+
   .form__checkbox-wrapper {
     &:nth-child(odd) {
-      padding-left: 0
+      padding-left: 0;
     }
+
     &:nth-child(even) {
       padding-left: 0;
     }
   }
+
   .form__contacts-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
   .form__telephone-wrapper {
     display: flex;
     padding-right: 80px;
     align-items: center;
   }
+
   .form__email-wrapper {
     display: flex;
     align-items: center;
   }
+
   .form__input {
     &--telephone {
       margin-bottom: 0;
       margin-left: 16px;
       width: 257px;
     }
+
     &--email {
-      width: auto;
       flex-grow: 1;
       margin-left: 21px;
       width: 257px;
     }
   }
+
   .form__caption {
     &--impression {
       padding-left: 76px;
     }
+
     &--contacts {
       margin-bottom: 70px;
     }
+
     &--attractions {
       margin-bottom: 41px;
     }
   }
+
   .form__fieldset-wrapper {
     &--impression {
       padding-left: 4px;
     }
+
     &--introduce {
       padding-left: 81px;
     }
+
     &--contacts {
       margin-bottom: 53px;
+
       &::after {
         width: 280px;
       }
+
       &::before {
         width: 280px;
       }
     }
+
     &--attractions {
       margin-bottom: 40px;
+
       &::after {
         width: 280px;
       }
+
       &::before {
         width: 280px;
       }
     }
+
     &--message {
       &::after {
         width: 280px;
       }
+
       &::before {
         width: 280px;
       }
     }
   }
+
   .form__radio-label {
     padding-top: 16px;
     padding-left: 75px;
   }
+
   .form__label {
     &--introduce {
       margin-right: 16px;
     }
+
     &--telephone {
       padding-left: 0;
       margin-bottom: 0;
     }
+
     &--email {
       padding-left: 0;
       margin-bottom: 0;
       white-space: nowrap;
     }
   }
+
   .form__input-box {
     &--telephone {
       margin-bottom: 0;
     }
   }
+
   .form__checkbox-wrapper:nth-child(2) {
     padding-left: 20px;
   }
+
   .form__checkbox-wrapper:nth-child(3) {
     padding-left: 38px;
   }
+
   .form__checkbox-wrapper:nth-child(4) {
     padding-left: 35px;
   }
 }
-
-

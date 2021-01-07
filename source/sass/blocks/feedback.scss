@@ -1,6 +1,7 @@
 .feedback {
   padding-top: 39px;
 }
+
 .feedback__title {
   @include reset;
   margin-bottom: 31px;
@@ -9,6 +10,7 @@
   font-size: 18px;
   text-align: center;
 }
+
 .feedback__intro {
   @include reset;
   margin: 0 auto;
@@ -28,13 +30,15 @@
     padding-right: 60px;
     padding-bottom: 61px;
   }
+
   .feedback__title {
     margin-bottom: 35px;
     font-size: 30px;
   }
+
   .feedback__intro {
     padding-bottom: 86px;
-}
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -45,6 +49,7 @@
     padding-right: 120px;
     padding-bottom: 68px;
   }
+
   .feedback__intro {
     padding-bottom: 58px;
   }

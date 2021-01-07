@@ -2,6 +2,7 @@
   padding-bottom: 22px;
   padding-top: 36px;
 }
+
 .footer__hashtag {
   @include reset;
   margin-bottom: 36px;
@@ -10,19 +11,20 @@
   font-size: 21px;
   text-align: center;
 }
+
 .footer__socials {
   margin-bottom: 38px;
-}
-.footer__copyright {
 }
 
 @media (min-width: $tablet-width) {
   .footer {
     padding-top: 30px;
   }
+
   .footer__hashtag {
     margin: 0;
   }
+
   .footer__socials {
     margin: 0;
   }

@@ -1,6 +1,7 @@
 .media-content {
   padding-top: 32px;
 }
+
 .media-content__title {
   @include reset;
   margin-bottom: 28px;
@@ -10,15 +11,12 @@
   line-height: 26px;
   text-align: center;
 }
-.media-content__photos {
-}
-.media-content__video-content {
-}
 
 @media (min-width: $tablet-width) {
   .media-content {
     padding-top: 65px;
   }
+
   .media-content__title {
     margin-bottom: 34px;
     font-size: 30px;
@@ -29,6 +27,7 @@
   .media-content {
     padding-top: 102px;
   }
+
   .media-content__title {
     margin-bottom: 36px;
   }
