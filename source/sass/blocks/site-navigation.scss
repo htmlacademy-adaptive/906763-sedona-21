@@ -36,10 +36,6 @@
   }
 }
 
-.site-navigation--nojs .site-navigation__toggle {
-  display: none;
-}
-
 .site-navigation__button-wrapper {
   padding-top: 12px;
   padding-bottom: 17px;
@@ -67,6 +63,18 @@
 .site-navigation--opened .site-navigation__toggle--close,
 .site-navigation--opened .site-navigation__list {
   display: block;
+}
+
+.site-navigation--opened .site-navigation__toggle--open {
+  display: none;
+}
+
+.site-navigation--nojs .site-navigation__list {
+  display: block;
+}
+
+.site-navigation--nojs .site-navigation__toggle {
+  display: none;
 }
 
 .site-navigation__item {
