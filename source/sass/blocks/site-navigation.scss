@@ -125,7 +125,7 @@
     display: none;
   }
 
-  .site-navigation__list {
+  .site-navigation .site-navigation__list {
     display: flex;
     justify-content: space-between;
     padding-left: 47px;
@@ -204,7 +204,7 @@
     }
   }
 
-  .site-navigation__list {
+  .site-navigation .site-navigation__list {
     padding-left: 91px;
     padding-right: 70px;
   }
