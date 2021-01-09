@@ -55,7 +55,7 @@
 @media (min-width: $tablet-width) {
   .header {
     &--inner {
-      padding-bottom: 288px;
+      padding-bottom: 290px;
       background-image: url("../img/background_desktop.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -84,11 +84,15 @@
 @media (min-width: $desktop-width) {
   .header {
     &--inner {
-      padding-bottom: 299px;
+      padding-bottom: 300px;
 
       &::before {
         @include pseudo;
         width: $desktop-width-container;
+      }
+
+      &::after {
+        bottom: 120px;
       }
     }
   }
