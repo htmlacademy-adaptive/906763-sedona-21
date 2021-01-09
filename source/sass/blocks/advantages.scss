@@ -68,6 +68,10 @@
   }
 }
 
+.advantages__text-wrap {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     padding: 0;
@@ -79,12 +83,14 @@
   }
 
   .advantages__item {
-    padding: 0 30px 59px 30px;
+    padding: 0 32px 59px 32px;
     text-align: center;
 
     &--food {
       grid-column: 2/3;
       grid-row: 1/2;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
 
@@ -137,5 +143,14 @@
 
   .advantages__item {
     padding-bottom: 81px;
+
+    &--house {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+
+  .advantages__text-wrap {
+    display: block;
   }
 }

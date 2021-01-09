@@ -18,6 +18,7 @@
           <img class="header__logo-image" src="img/logotype_mobile.svg" alt="Логотип Седоны">
         </picture>
       </a>
+      <!-- Класс для реализации работы без JS .site-navigation--nojs -->
       <nav class="header__site-navigation site-navigation">
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
@@ -27,10 +28,10 @@
             <a class="site-navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="form.html">Форма отзыва</a>
+            <a class="site-navigation__link site-navigation__link--feedback" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">HTML Academy</a>
+            <a class="site-navigation__link site-navigation__link--html-academy" href="#">HTML Academy</a>
           </li>
         </ul>
         <div class="site-navigation__button-wrapper">
@@ -73,13 +74,14 @@
           </li>
           <li class="reasons__item reasons__item--advantages advantages">
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--house">
                 <h3 class="advantages__title advantages__title--house">Жилье</h3>
                 <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--souvenirs">
                 <h3 class="advantages__title advantages__title--souvenirs">Сувениры</h3>
-                <p class="advantages__text">Не только китайского, но и местного производства!</p>
+                <p class="advantages__text">Не только китайского, <br class="advantages__text-wrap"> но и местного
+                  производства!</p>
               </li>
               <li class="advantages__item advantages__item--food">
                 <h3 class="advantages__title advantages__title--food">Еда</h3>
@@ -89,9 +91,11 @@
           </li>
           <li class="reasons__item reasons__item--expanded reasons__item--devils-bridge">
             <div class="reasons__text-wrapper reasons__text-wrapper--devils-bridge">
-              <h3 class="reasons__title reasons__title--devils-bridge">Там есть Мост дьявола</h3>
+              <h3 class="reasons__title reasons__title--devils-bridge">Там есть <br class="reasons__text-wrap"> Мост
+                дьявола</h3>
               <p class="reasons__number">— №2 —</p>
-              <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="reasons__text reasons__text--devils-bridge">Да, по нему можно пройти! Если вы осмелитесь,
+                конечно</p>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
@@ -114,13 +118,14 @@
                 <p class="reasons__number">— №3 —</p>
                 <p class="reasons__text">Все интересные места находятся очень близко</p>
               </li>
-              <li class="reasons__item">
+              <li class="reasons__item reasons__item--road">
                 <h3 class="reasons__title"><span class="reasons__title-text">Красивая дорога</span></h3>
                 <p class="reasons__number">— №4 —</p>
                 <p class="reasons__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="reasons__item">
-                <h3 class="reasons__title"><span class="reasons__title-text">Мало туристов</span></h3>
+                <h3 class="reasons__title"><span class="reasons__title-text">Мало <br class="reasons__text-wrap">
+                    туристов</span></h3>
                 <p class="reasons__number">— №5 —</p>
                 <p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
             </ul>
@@ -129,7 +134,8 @@
       </section>
       <div class="search-hotel">
         <p class="search-hotel__intro">Заинтересовались?</p>
-        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки, <br class="search-hotel__text-wrap"> и мы
+          покажем вам лучшие предложения гостиниц
           в Cедоне</p>
         <div class="search-hotel__button-wrapper">
           <a class="search-hotel__button button" href="#">

@@ -169,6 +169,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
+    &--feedback {
+      padding-right: 14px;
+    }
+
     &:hover,
     &:focus {
       background-color: white;
@@ -207,5 +211,15 @@
   .site-navigation .site-navigation__list {
     padding-left: 91px;
     padding-right: 70px;
+  }
+
+  .site-navigation__link {
+    &--html-academy {
+      padding-right: 0;
+    }
+
+    &--feedback {
+      padding-right: 17px;
+    }
   }
 }

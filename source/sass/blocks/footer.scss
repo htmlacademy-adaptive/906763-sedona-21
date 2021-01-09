@@ -13,7 +13,7 @@
 }
 
 .footer__socials {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,9 +23,20 @@
 
   .footer__hashtag {
     margin: 0;
+    margin-left: 13px;
   }
 
   .footer__socials {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__hashtag {
+    padding-right: 25px;
+  }
+
+  .footer__copyright {
+    padding-left: 20px;
   }
 }

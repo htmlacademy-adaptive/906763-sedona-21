@@ -1,6 +1,6 @@
 .page-main__promo {
   position: relative;
-  height: 389px;
+  height: 388px;
   padding-top: 90px;
   box-sizing: border-box;
   background-color: #6d879c;
@@ -31,8 +31,8 @@
 .page-main__title {
   margin-top: 32px;
   margin-bottom: 29px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0 10px;
   max-width: 520px;
   color: $dark-title;
@@ -46,6 +46,8 @@
   .page-main__title {
     margin-top: 43px;
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 21px;
   }
 

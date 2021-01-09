@@ -2,14 +2,14 @@ const buttonOpen = document.querySelector(".site-navigation__toggle--open");
 const siteNavigation = document.querySelector(".site-navigation");
 const buttonClose = document.querySelector(".site-navigation__toggle--close");
 const feedbackForm = document.querySelector(".feedback__form");
-const userName = feedbackForm.querySelector(".form__input--name");
-const userSurname = feedbackForm.querySelector(".form__input--surname");
-const userTelephone = feedbackForm.querySelector(".form__input--telephone");
-const userEmail = feedbackForm.querySelector(".form__input--email");
+const userName = document.querySelector(".form__input--name");
+const userSurname = document.querySelector(".form__input--surname");
+const userTelephone = document.querySelector(".form__input--telephone");
+const userEmail = document.querySelector(".form__input--email");
 const modalError = document.querySelector(".modal--error");
-const modalErrorClose = modalError.querySelector(".modal__button--ok");
+const modalErrorClose = document.querySelector(".modal__button--ok");
 const modalSuccess = document.querySelector(".modal--success");
-const modalSuccessClose = modalSuccess.querySelector(".modal__button--close");
+const modalSuccessClose = document.querySelector(".modal__button--close");
 
 buttonOpen.addEventListener("click", function () {
   siteNavigation.classList.add("site-navigation--opened");
