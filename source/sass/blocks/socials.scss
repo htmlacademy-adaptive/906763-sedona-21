@@ -19,7 +19,8 @@
   height: 48px;
   background-color: $basic-blue;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-background-hover;
   }
 

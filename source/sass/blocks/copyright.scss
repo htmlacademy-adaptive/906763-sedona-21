@@ -12,8 +12,11 @@
 
 .copyright__icon {
   margin-top: 2px;
+}
 
-  &:hover {
+.copyright__logo {
+  &:hover,
+  &:focus {
     fill: $basic-blue;
   }
 

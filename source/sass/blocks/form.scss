@@ -141,6 +141,7 @@
 
   &--telephone {
     margin-bottom: 16px;
+
     &::after {
       @include pseudo;
       width: 18px;
