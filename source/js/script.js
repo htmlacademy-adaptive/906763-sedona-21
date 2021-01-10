@@ -55,4 +55,3 @@ modalErrorClose.addEventListener("click", function () {
 modalSuccessClose.addEventListener("click", function () {
   modalSuccess.classList.remove("modal--open");
 });
-
