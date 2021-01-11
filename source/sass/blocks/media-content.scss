@@ -1,6 +1,7 @@
 .media-content {
-  padding-top: 31px;
+  padding-top: 32px;
 }
+
 .media-content__title {
   @include reset;
   margin-bottom: 28px;
@@ -10,26 +11,24 @@
   line-height: 26px;
   text-align: center;
 }
-.media-content__photos {
-}
-.media-content__video-content {
-}
 
 @media (min-width: $tablet-width) {
   .media-content {
-    padding-top: 65px;
+    padding-top: 63px;
   }
+
   .media-content__title {
-    margin-bottom: 25px;
+    margin-bottom: 34px;
     font-size: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .media-content {
-    padding-top: 102px;
+    padding-top: 101px;
   }
+
   .media-content__title {
-    margin-bottom: 25px;
+    margin-bottom: 36px;
   }
 }

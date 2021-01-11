@@ -1,21 +1,29 @@
 .modal {
+  display: none;
+  position: absolute;
   box-sizing: border-box;
   text-align: center;
   background-color: white;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
   &--error {
+    bottom: 724px;
+    left: 0;
+    right: 0;
     padding-top: 40px;
-    padding-right: 22px;
+    padding-right: 35px;
     padding-bottom: 35px;
-    padding-left: 37px;
+    padding-left: 35px;
   }
+
   &--success {
-    padding-top: 38px;
+    padding-top: 31px;
+    bottom: 354px;
+    left: 0;
+    right: 0;
   }
-  &--show {
-    display: block;
-  }
-  &--close {
+
+  &--open {
     display: block;
   }
 }
@@ -23,24 +31,38 @@
 .modal__title {
   @include reset;
   margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
 }
+
 .modal__text {
   @include reset;
+  font-size: 14px;
+  line-height: 24px;
+
   &--error {
     margin-bottom: 22px;
   }
+
   &--success {
     margin-bottom: 47px;
+    padding: 0 40px;
   }
 }
+
 .modal__button {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 14px;
   min-height: 58px;
+  font-size: 18px;
+  line-height: 26px;
+
   &--ok {
     margin: 0 auto;
     min-width: 180px;
+    padding-top: 18px;
   }
+
   &--close {
     width: 100%;
     display: block;
@@ -58,33 +80,55 @@
 @media (min-width: $tablet-width) {
   .modal {
     &--error {
+      bottom: 328px;
       width: 400px;
-      padding: 51px 45px 49px 45px;
+      padding: 47px 45px 49px 45px;
     }
+
     &--success {
+      bottom: 489px;
       width: 640px;
-      padding-top: 55px;
+      padding-top: 45px;
     }
   }
+
   .modal__title {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
+    padding: 0 30px;
     font-size: 30px;
     line-height: 40px;
   }
+
   .modal__text {
     margin-left: auto;
     margin-right: auto;
     max-width: 460px;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
+
+    &--success {
+      padding: 0 110px;
+    }
   }
+
   .modal__button {
+    font-size: 21px;
+    line-height: 26px;
+
     &--ok {
       min-width: 272px;
       min-height: 58px;
     }
   }
+
   .modal__button-wrapper {
     padding: 44px 91px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .modal {
+    &--error {
+      bottom: 217px;
+    }
+  }
+}

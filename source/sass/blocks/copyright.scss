@@ -2,23 +2,36 @@
   display: flex;
   justify-content: center;
 }
+
 .copyright__text {
   @include reset;
-  margin-right: 5px;
+  margin-right: 13px;
   color: black;
   align-self: center;
 }
 
 .copyright__icon {
-  &:hover {
+  margin-top: 2px;
+}
+
+.copyright__logo {
+  &:hover,
+  &:focus {
     fill: $basic-blue;
   }
+
   &:active {
     color: black;
     opacity: 0.3;
   }
 }
-.copyright__logo {
-}
-.copyright__logo-image {
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 11px;
+  }
+
+  .copyright__icon {
+    margin-top: 6px;
+  }
 }

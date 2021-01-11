@@ -1,24 +1,30 @@
 .video-content {
   padding-top: 32px;
-  padding-bottom: 49px;
+  padding-bottom: 45px;
 }
+
 .video-content__intro {
   @include reset;
-  margin-bottom: 24px;
+  margin-bottom: 29px;
   color: $dark-title;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
+
 .video-content__text {
   @include reset;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 33px;
+  padding-left: 40px;
+  padding-right: 40px;
   max-width: 450px;
   text-align: center;
+  line-height: 24px;
 }
+
 .video-content__poster {
   display: block;
   margin: 0 auto;
@@ -28,18 +34,32 @@
 
 @media (min-width: $tablet-width) {
   .video-content {
-    padding-top: 59px;
-    padding-bottom: 40px;
+    padding-top: 56px;
+    padding-bottom: 46px;
   }
+
   .video-content__intro {
-    margin-bottom: 28px;
+    margin-bottom: 34px;
     font-size: 30px;
   }
+
   .video-content__text {
-    margin-bottom: 64px;
+    margin-bottom: 80px;
   }
+
   .video-content__poster {
     width: initial;
     max-width: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-content {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  .video-content__text {
+    margin-bottom: 78px;
   }
 }
