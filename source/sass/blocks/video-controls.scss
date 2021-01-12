@@ -98,6 +98,15 @@
 
   .video-controls__button {
     fill: $video-controls;
+
+    &:hover,
+    &:focus {
+      fill: rgba($video-controls, 0.6);
+    }
+
+    &:active {
+      fill: rgba($video-controls, 0.3);
+    }
   }
 
   .video-controls__scale-wrapper {

@@ -9,11 +9,10 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const webp = require("gulp-webp");
-const uglify = require("gulp-uglify");
+const uglify = require('gulp-uglify-es').default;
 const del = require("del");
 const svgstore = require("gulp-svgstore");
 const sync = require("browser-sync").create();
-
 
 //HTML
 
@@ -22,7 +21,6 @@ const html = () => {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
-
 
 // Styles
 
@@ -36,7 +34,7 @@ const styles = () => {
       csso()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(rename("style.min.сss"))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
@@ -150,7 +148,7 @@ const build = gulp.series(
     styles,
     html,
     copy,
-    // scripts,
+    scripts,
     sprite,
     images,
     createWebp
