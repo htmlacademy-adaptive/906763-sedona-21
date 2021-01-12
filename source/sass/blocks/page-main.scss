@@ -1,18 +1,21 @@
-.page-main {
-}
 .page-main__promo {
   position: relative;
-  height: 389px;
+  height: 388px;
   padding-top: 90px;
   box-sizing: border-box;
   background-color: #6d879c;
   background-image: url("../img/background_mobile.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background_mobile@2x.jpg");
+  }
+
   &::before {
     @include pseudo;
     bottom: 0;
     left: 50%;
-    width: $mobile-width-container;
+    width: 100%;
     height: 57px;
     transform: translateX(-50%);
     background-image: url("../img/intro_triangle.svg");
@@ -20,6 +23,7 @@
     background-position: bottom;
   }
 }
+
 .page-main__promo-image {
   display: block;
   margin-left: auto;
@@ -31,8 +35,8 @@
 .page-main__title {
   margin-top: 32px;
   margin-bottom: 29px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0 10px;
   max-width: 520px;
   color: $dark-title;
@@ -41,36 +45,39 @@
   line-height: 26px;
   text-align: center;
 }
-.page-main__reasons {
-
-}
 
 @media (min-width: $tablet-width) {
   .page-main__title {
     margin-top: 43px;
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 21px;
   }
+
   .page-main__promo {
     height: 518px;
     padding-top: 78px;
-    background-image: url(../img/background_desktop.jpg);
+    background-image: url("../img/background_desktop.jpg");
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/background_desktop@2x.jpg);
+      background-image: url("../img/background_desktop@2x.jpg");
       background-size: 1200px auto;
     }
+
     &::before {
       @include pseudo;
       bottom: 0;
       left: 50%;
-      width: $tablet-width-container;
+      width: 100%;
       height: 57px;
       transform: translateX(-50%);
-      background-image: url(../img/intro_triangle.svg);
+      background-image: url("../img/intro_triangle.svg");
       background-repeat: no-repeat;
       background-position: bottom;
     }
   }
+
   .page-main__promo-image {
     width: 461px;
     height: 350px;
@@ -83,6 +90,7 @@
       width: 1200px;
     }
   }
+
   .page-main__title {
     margin-top: 55px;
   }

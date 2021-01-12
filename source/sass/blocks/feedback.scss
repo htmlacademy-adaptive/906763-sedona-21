@@ -1,46 +1,56 @@
 .feedback {
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 39px;
 }
+
 .feedback__title {
   @include reset;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   color: $dark-title;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
 }
+
 .feedback__intro {
   @include reset;
   margin: 0 auto;
-  padding-bottom: 16px;
-  max-width: 470px;
+  padding-bottom: 19px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  max-width: 467px;
   line-height: 24px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding-top: 63px;
+    padding-top: 66px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 61px;
+    padding-bottom: 63px;
   }
+
   .feedback__title {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 30px;
   }
+
   .feedback__intro {
-    padding-bottom: 83px;
+    padding-bottom: 86px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
-    padding-top: 114px;
+    box-sizing: border-box;
+    padding-top: 116px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 66px;
+    padding-bottom: 68px;
+  }
+
+  .feedback__intro {
+    padding-bottom: 58px;
   }
 }

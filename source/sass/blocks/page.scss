@@ -3,13 +3,13 @@
 }
 
 .page__body {
+  position: relative;
   font-family: $font-family;
   text-transform: uppercase;
   color: $dark-text;
-  background-color: white;
   font-size: 14px;
   line-height: 21px;
-  background: $page-background;
+  background-color: $page-background;
 }
 
 .page__container {
@@ -17,7 +17,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   background-color: white;
 }
 
