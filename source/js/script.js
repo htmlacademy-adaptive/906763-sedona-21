@@ -35,23 +35,25 @@ try {
   isStorageSupport = false;
 }
 
-feedbackForm.addEventListener("submit", function (evt) {
-  if (!userName.value || !userSurname.value || !userTelephone.value || !userEmail.value) {
-    evt.preventDefault();
-    modalError.classList.add("modal--open");
-  } else {
-    modalSuccess.classList.add("modal--open");
-    if (isStorageSupport) {
-      localStorage.setItem("userName", userName.value);
-      localStorage.setItem("userSurname", userSurname.value);
+if (feedbackForm) {
+  feedbackForm.addEventListener("submit", function (evt) {
+    if (!userName.value || !userSurname.value || !userTelephone.value || !userEmail.value) {
+      evt.preventDefault();
+      modalError.classList.add("modal--open");
+    } else {
+      modalSuccess.classList.add("modal--open");
+      if (isStorageSupport) {
+        localStorage.setItem("userName", userName.value);
+        localStorage.setItem("userSurname", userSurname.value);
+      }
     }
-  }
-});
+  });
 
-modalErrorClose.addEventListener("click", function () {
-  modalError.classList.remove("modal--open");
-});
+  modalErrorClose.addEventListener("click", function () {
+    modalError.classList.remove("modal--open");
+  });
 
-modalSuccessClose.addEventListener("click", function () {
-  modalSuccess.classList.remove("modal--open");
-});
+  modalSuccessClose.addEventListener("click", function () {
+    modalSuccess.classList.remove("modal--open");
+  });
+}
