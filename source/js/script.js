@@ -10,6 +10,9 @@ const modalError = document.querySelector(".modal--error");
 const modalErrorClose = document.querySelector(".modal__button--ok");
 const modalSuccess = document.querySelector(".modal--success");
 const modalSuccessClose = document.querySelector(".modal__button--close");
+const withoutJS = document.querySelector(".site-navigation--nojs");
+
+withoutJS.classList.remove("site-navigation--nojs");
 
 buttonOpen.addEventListener("click", function () {
   siteNavigation.classList.add("site-navigation--opened");
